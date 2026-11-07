@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvSapaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Halo!"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="PENGATURAN  (SharedPreferences)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama panggilan"
+            android:inputType="textPersonName" />
+
+        <Switch
+            android:id="@+id/swGelap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Tema gelap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ukuran font" />
+
+        <RadioGroup
+            android:id="@+id/rgFont"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbKecil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kecil" />
+
+            <RadioButton
+                android:id="@+id/rbSedang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sedang" />
+
+            <RadioButton
+                android:id="@+id/rbBesar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Besar" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etSandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kata sandi (TIDAK disimpan)"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan pengaturan" />
+
+        <Button
+            android:id="@+id/btnXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat isi file SharedPreferences" />
+
+        <TextView
+            android:id="@+id/tvXml"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="RIWAYAT KEGIATAN  (Database SQLite)"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCatatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tulis kegiatan hari ini" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnTambah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tambah" />
+
+            <Button
+                android:id="@+id/btnHapus"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hapus semua" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
